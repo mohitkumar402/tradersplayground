@@ -1,45 +1,96 @@
 # TradersPlayground
 
-TradersPlayground is a Flutter-based stock trading and management application that provides real-time stock market data, trend analysis, and trading insights.
+> Flutter-based trading application exploring real-time market data, portfolio workflows, authentication, and interactive financial dashboards.
 
-## Features
-- Real-time stock data fetching
-- Interactive UI for stock tracking
-- WebSockets integration for live updates
-- Secure authentication
-- User-friendly dashboard
+**Platform:** Flutter · Firebase · WebSockets
 
-## Installation
-To run this project locally, follow these steps:
+---
 
-1. Clone the repository:
+## Product
+
+TradersPlayground is an experimental trading interface focused on the user experience around market data and trading workflows.
+
+### Core capabilities
+
+- Real-time stock data integration
+- Interactive market dashboard
+- Live updates through WebSockets
+- Authentication
+- Firebase-backed application data
+- Trading-focused UI and workflows
+
+---
+
+## Architecture
+
+```text
+Flutter App
+   │
+   ├── Authentication
+   ├── Market / Trading UI
+   ├── Real-time updates
+   │
+   ▼
+Firebase Services
+   ├── Authentication
+   ├── Firestore
+   ├── Realtime Database
+   └── Storage
+```
+
+---
+
+## Stack
+
+| Layer | Technology |
+|---|---|
+| Application | Flutter / Dart |
+| Authentication | Firebase Auth |
+| Database | Cloud Firestore / Realtime Database |
+| Storage | Firebase Storage |
+| Real-time | WebSockets |
+
+---
+
+## Getting Started
+
+### Requirements
+
+- Flutter SDK
+- Dart SDK
+- Firebase project
+
+### Setup
+
 ```bash
 git clone https://github.com/mohitkumar402/tradersplayground.git
 cd tradersplayground
-```
-2. Install dependencies:
-```bash
-flutter pub add firebase_core
-flutter pub add firebase_auth
-flutter pub add cloud_firestore
-flutter pub add firebase_database
-flutter pub add firebase_storage
-```
-3. Run the application:
-```bash
+flutter pub get
 flutter run
 ```
 
-## Firebase Configuration
-Make sure to configure your Firebase project properly:
-- Create a Firebase project at [Firebase Console](https://console.firebase.google.com/).
-- Add your Flutter app and download the `google-services.json` (Android) or `GoogleService-Info.plist` (iOS).
-- Place the files in the appropriate project directories.
-- Enable necessary Firebase services like Authentication, Firestore, and Storage.
+### Firebase configuration
 
-## Contributions
-Feel free to contribute by submitting a pull request or reporting issues.
+Create a Firebase project and configure the Flutter application for the platforms you want to run. Keep Firebase credentials and production configuration out of source control.
 
-## License
-This project is licensed under the MIT License.
+---
 
+## Project Direction
+
+The project can evolve toward:
+
+- Portfolio tracking
+- Watchlists
+- Advanced market analytics
+- Order simulation
+- Risk and performance metrics
+- Stronger real-time data architecture
+
+---
+
+## Status
+
+**Type:** Product / trading application experiment  
+**Focus:** Real-time data + financial UI + mobile development
+
+<p align="center"><strong>Explore. Build. Trade smarter.</strong></p>
